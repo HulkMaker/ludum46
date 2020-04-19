@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8" />
-	<title>HTML5维京战争手机小游戏 - 源码之家</title>
-	<link rel="shortcut icon" href="icon.png">
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="initial-scale=1.0001, minimum-scale=1.0001, maximum-scale=1.0001, user-scalable=no, minimal-ui"/>	
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<link rel="stylesheet" type="text/css" href="game.css">	
-	<script type="text/javascript" src="game.js"></script>
-	
-<!-- AnalyticsCode -->	
-
-<!-- APICode -->
-</head>
-
-<body onLoad="setTimeout(function(){window.scrollTo(0,1)},1);">
-	
-	<div class="gamecenter-activator"></div>
-		
-	<div id="ajaxbar">
-		<div id="game"><canvas id="canvas"></canvas></div>
-		<div id="orientate"><img src="media/graphics/orientate/landscape.jpg" /></div>
-		<div id="play" class="play" onClick=""><img src="media/graphics/splash/mobile/cover-start.jpg" /></div>	
-	</div>
-<div style="text-align:center;">
-<p>更多小游戏：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
-</div>	 
-</body>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | LD46_Game</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGlBuild.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">LD46_Game</div>
+      </div>
+    </div>
+  </body>
 </html>
